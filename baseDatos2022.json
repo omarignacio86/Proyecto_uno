@@ -1,0 +1,14 @@
+{
+"datos2022" : [
+	{"Id2022":1,"lado1":70,"lado2": 70,"superficie":4900 },
+	{"Id2022":2,"lado1": 60,"lado2": 60,"superficie": 3600},
+	{"Id2022":3,"radio":50,"superficie":7854},
+	{ "Id2022":4,"radio": 40,"superficie":5027},
+    { "Id2022": 5,"lado1": 30,"lado2": 30,"superficie": 900},
+	{ "Id2022": 6, "radio": 20, "superficie": 1257 },
+	{ "Id2022": 7, "lado1": 10, "lado2": 10,"superficie":100}
+
+]
+}
+
+

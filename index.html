@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <h1>Aplicación para cálculo de superficies</h1>
+
+    <div class="datos" id="datos1"></div>
+    <div class="row">
+        <div class="col l5 s12">
+            <div class="col s8 offset-s2">
+            <form id="formulario">
+
+                <div class="estilo">
+                    <p>
+                        <label>
+                            <input class="with-gap" id="rectangulo" name="figura" type="radio" checked/>
+                            <span>RECTÁNGULO</span>
+                        </label>
+                    </p>
+                     
+                    <p>
+                        <label>
+                            <input class="with-gap" id="circulo" name="figura"  type="radio"/>
+                            <span>CÍRCULO</span>
+                        </label>
+                    </p>
+                </div>
+
+                <div class="input-field">
+                    <label for="lado1">LADO 1</label>
+                    <input class="validate"  id="lado1" type="number" name="l1">
+                </div>
+
+                <div class="input-field">
+                    <label for="lado2">LADO 2</label>
+                    <input class="validate"   id="lado2" type="number" name="l2">
+                </div>
+
+                <div class="input-field">
+                    <label for="radio">RADIO</label>
+                    <input class="validate"  disabled id="radio" type="number" name="r">
+                </div>
+
+                <div class="estilo">
+                    <button id="calculo">Calcular</button>
+                </div>
+            </form>
+
+            <div class="estilo1">
+                <button id="save">Guardar</button>
+            </div>
+
+             
+             
+            <div class="estilo1">
+                <button id="b">Recuperar datos año 2022</button>
+            </div>
+               
+            
+
+          </div>
+        </div>
+
+
+
+
+        <div class="col l5 offset-l1 s12" class="tabladatos">
+            <table class="centered" id="tablaresultados">
+                <caption>Historial de Cálculo</caption>
+                <tr>
+                    <th>Lado1</th>
+                    <th>Lado2</th>
+                    <th>Radio</th>
+                    <th>Superficie</th>
+                    <th>Borrar</th>
+                </tr>
+                <tr>
+                    
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        td,
+        th {
+            text-align: center;
+            padding: 10px;
+            border: solid red 1px
+        }
+
+        form {
+            text-align: center;
+        }
+
+        .tabladatos table {
+            margin: 0 auto;
+        }
+
+        .datos {
+            text-align: center;
+            background-color: rgb(247, 247, 244);
+            padding-bottom: 20px;
+        }
+
+        .estilo {
+            padding-bottom: 20px;
+
+        }
+
+        .estilo1 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        #save #calculo {
+            font-size: 23px;
+        }
+    </style>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="archivo_ok.js"></script>
+</body>
+
+</html>
